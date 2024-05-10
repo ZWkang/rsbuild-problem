@@ -5,7 +5,7 @@
   </div>
 </template>
 
-<style scoped lang="postcss">
+<style scoped lang="scss">
 .content {
   display: flex;
   min-height: 100vh;
@@ -25,4 +25,9 @@
   font-weight: 400;
   opacity: 0.5;
 }
+</style>
+
+
+<style lang="scss">
+@import "@/assets/index.scss";
 </style>
