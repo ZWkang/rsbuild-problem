@@ -1,11 +1,25 @@
+<script lang="ts" setup>
+import { add } from './a.js';
+
+enum Color {
+  Red,
+  Green,
+  Blue
+}
+
+const Value: Color = 1;
+</script>
 <template>
   <div class="content">
     <h1>Rsbuild with Vue</h1>
     <p>Start building amazing things with Rsbuild.</p>
+    <p> {{ add(1, 2) }} </p>
+
+    <p>{{ <Color.Red>Value }}</p>
   </div>
 </template>
 
-<style scoped lang="postcss">
+<style scoped lang="css">
 .content {
   display: flex;
   min-height: 100vh;
