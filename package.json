@@ -1,18 +1,20 @@
 {
-  "name": "@examples/vue3",
+  "name": "my-vue-app",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "rsbuild dev --open",
-    "build": "rsbuild build",
-    "preview": "rsbuild preview"
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@rsbuild/plugin-babel": "^0.6.13",
-    "vue": "^3.4.19"
+    "vue": "^3.4.21"
   },
   "devDependencies": {
-    "@rsbuild/core": "latest",
-    "@rsbuild/plugin-vue": "latest"
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
   }
 }
