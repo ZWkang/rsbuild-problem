@@ -4,9 +4,6 @@ const { compileTemplate } = require('vue/compiler-sfc')
 module.exports = function (source) {
   this.cacheable && this.cacheable();
 
-  const childContext = Object.create(this)
-  const query = this.resourceQuery || {};
-  childContext.query = Object.assign({}, query)
   const importType = this.resourceQuery.includes('component') ? 'component': this.resourceQuery.includes('raw') ? 'raw': 'url';
   let svg = source;
 
